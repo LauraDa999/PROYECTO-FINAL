@@ -91,6 +91,13 @@ plt.show()
 # Tabla Guia:
 ![image](https://github.com/LauraDa999/PROYECTO-FINAL/assets/141860731/0157d0b2-0902-47cc-bcd9-606fd72c413c)
 
+
+# Temperaturaa ideales en el desaroolo de crecimiento de la planta
+- Para la germinación de semillas de aguacate: rango de 25-30 
+- Temperatura para el Crecimiento Vegetativo: entre 20-25 .
+- Temperatura para la Floración: rango de 20-24 grados Celsius y temperaturas nocturnas que no desciendan significativamente por debajo de 10 grados Celsius.
+- Temperatura para la Polinización y Desarrollo del Fruto: diurnas entre 20-25 grados Celsius suelen ser favorables.
+
 # Herramientas utilizadas y vistas en el curso
 Aquí hay algunos temas fundamentales que se pueden reconocer en el código:
 
