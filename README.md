@@ -3,6 +3,9 @@
 #  Equipo Code-farmers
 PRESENTADO POR:
 LAURA DANIELA GARCIA CHAVES Y MARIA JOSE VALLEJO RODRIGUEZ
+![image](https://github.com/LauraDa999/Taller1/assets/141860731/433b1645-87dd-48eb-84d6-fc6bc19051d4)
+
+
 
 #  Situación Problemática:
 
@@ -70,13 +73,6 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
-```
-# Manipulación de Datos con Pandas:
-Se utiliza la biblioteca pandas para crear un DataFrame a partir de datos ficticios.
-```
-data = {'Fecha': [1, 2, 3, 4, 5, 6],
-        'Temperatura': [25, 28, 24, 30, 32, 29]}
-df = pd.DataFrame(data)
 ```
 # División de Datos:
 Se dividen los datos en conjuntos de entrenamiento y prueba utilizando train_test_split de sklearn.
