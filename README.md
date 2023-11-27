@@ -5,16 +5,41 @@ PRESENTADO POR:
 LAURA DANIELA GARCIA CHAVES Y MARIA JOSE VALLEJO RODRIGUEZ
 ![image](https://github.com/LauraDa999/Taller1/assets/141860731/433b1645-87dd-48eb-84d6-fc6bc19051d4)
 
-
+# PRESENTACION: https://www.canva.com/design/DAF1T1bQpCY/fTDA7QpZbiFs7DWqxAQdVw/view?utm_content=DAF1T1bQpCY&utm_campaign=designshare&utm_medium=link&utm_source=editor
 
 #  Situación Problemática:
 
 En una plantación de aguacates, los agricultores están enfrentando pérdidas significativas debido a las variaciones climáticas extremas. Las fluctuaciones de temperatura han afectado el rendimiento de los aguacates, ya que ciertas variedades de aguacates son más sensibles a cambios específicos de temperatura durante su desarrollo.
 
 En este escenario, el cultivo de aguacates requiere una gestión cuidadosa de las condiciones climáticas para maximizar el rendimiento y minimizar las pérdidas. Sin embargo, las predicciones meteorológicas actuales no son lo suficientemente específicas para las necesidades de este cultivo.
+ 
+  
+# PASOS:
 
-# CODIGO ORIGINAL
-# Código específicamente para crear un modelo para predecir temperaturas basándose en fechas:
+- "pandas", Para trabajar con estructuras de datos tipo DataFrame.
+- "train_test_split de sklearn.model_selection" Para dividir los datos en conjuntos de entrenamiento y prueba.
+- "LinearRegression de sklearn.linear_model" Para crear y entrenar un modelo de regresión lineal.
+- "matplotlib.pyplot" Para graficar los datos y el modelo.
+
+- Se crea un DataFrame con dos columnas, 'Fecha' y 'Temperatura', que representan los datos de ejemplo.
+Dividir los datos:
+
+- Se dividen los datos en conjuntos de entrenamiento y prueba usando train_test_split.
+Crear y entrenar el modelo:
+
+- Se crea un objeto de modelo de regresión lineal (LinearRegression) y se entrena con los datos de entrenamiento.
+Predecir temperaturas para nuevas fechas:
+
+- Se utiliza el modelo entrenado para predecir las temperaturas para nuevas fechas.
+Imprimir las predicciones:
+
+- Se imprime en la consola las predicciones de temperaturas para las nuevas fechas.
+Graficar el modelo:
+
+- Se utiliza matplotlib para graficar los datos reales, el modelo de regresión lineal y las predicciones para nuevas fecha
+  
+# CODIGO 
+# Código para predecir temperaturas basándose en fechas:
 ```
 # Importar bibliotecas
 import pandas as pd
