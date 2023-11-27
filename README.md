@@ -5,10 +5,6 @@ PRESENTADO POR:
 LAURA DANIELA GARCIA CHAVES Y MARIA JOSE VALLEJO RODRIGUEZ
 ![image](https://github.com/LauraDa999/Taller1/assets/141860731/433b1645-87dd-48eb-84d6-fc6bc19051d4)
 
-
-https://www.canva.com/design/DAF1T1bQpCY/view
-
-
 # PRESENTACION: https://www.canva.com/design/DAF1T1bQpCY/fTDA7QpZbiFs7DWqxAQdVw/view?utm_content=DAF1T1bQpCY&utm_campaign=designshare&utm_medium=link&utm_source=editor
 
 #  Situación Problemática:
@@ -19,7 +15,7 @@ En este escenario, el cultivo de aguacates requiere una gestión cuidadosa de la
  
   
 # PASOS:
-
+BIBLIOTECAS:
 - "pandas", Para trabajar con estructuras de datos tipo DataFrame.
 - "train_test_split de sklearn.model_selection" Para dividir los datos en conjuntos de entrenamiento y prueba.
 - "LinearRegression de sklearn.linear_model" Para crear y entrenar un modelo de regresión lineal.
@@ -92,6 +88,9 @@ plt.show()
 
 
 ```
+# Tabla Guia:
+![image](https://github.com/LauraDa999/PROYECTO-FINAL/assets/141860731/0157d0b2-0902-47cc-bcd9-606fd72c413c)
+
 # Herramientas utilizadas y vistas en el curso
 Aquí hay algunos temas fundamentales que se pueden reconocer en el código:
 
