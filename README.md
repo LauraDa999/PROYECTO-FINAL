@@ -147,11 +147,20 @@ Pasos:
 - Implementación de Estrategias: Con las predicciones en mano, los agricultores pueden implementar estrategias específicas, como ajustar el riego, aplicar protección contra heladas, o programar la - cosecha, para mitigar los efectos adversos de las condiciones climáticas.
 
 #  Beneficios Esperados:
+la plantación de aguacates, salvaria las pérdidas debidas a las variaciones climáticas extremas, se podrían esperar varios beneficios y mejoras en la gestión del cultivo.
+| Beneficios | Descripcion|
+| --- | --- |
+| Reducción de Pérdidas por Condiciones Climáticas Desfavorables: | La capacidad de prever y anticipar las variaciones climáticas extremas permitirá a los agricultores tomar medidas preventivas para proteger los cultivos, reduciendo así las pérdidas asociadas a condiciones climáticas desfavorables. |
+| Optimización de las Prácticas Agrícolas: | Con predicciones más precisas, los agricultores podrán ajustar sus prácticas agrícolas, como el riego y la fertilización, para adaptarse a las condiciones climáticas previstas, maximizando así el rendimiento y la salud de los aguacates. |
+| Mejora en la Calidad de los Cultivos:  | Al gestionar de manera más eficiente las condiciones climáticas, se puede esperar una mejora en la calidad de los aguacates cosechados, lo que podría tener un impacto positivo en los precios de mercado.  |
+| Planificación Estratégica de Cosechas: | La capacidad de prever las condiciones climáticas permitirá a los agricultores planificar de manera más estratégica la cosecha, eligiendo momentos óptimos para maximizar la calidad y cantidad de la producción. |
+| Aumento de la Rentabilidad: | La reducción de pérdidas y la mejora en la calidad de los cultivos pueden contribuir directamente a un aumento en la rentabilidad de la plantación de aguacates. |
+| Uso Eficiente de Recursos: | Al adaptar las prácticas agrícolas según las predicciones climáticas, se puede lograr un uso más eficiente de recursos como el agua y los fertilizantes, contribuyendo a la sostenibilidad del cultivo. |
+| Generación de Conocimiento: | La implementación del proyecto no solo resolverá el problema inmediato, sino que también generará conocimiento valioso sobre la relación entre las condiciones climáticas y el rendimiento de los aguacates, lo cual puede ser útil para futuras investigaciones y mejoras. |
+| Resiliencia ante Cambios Climáticos: | Al contar con un sistema de predicción y adaptación, la plantación de aguacates estará mejor preparada para enfrentar los desafíos planteados por los cambios climáticos, brindando mayor resiliencia a la operación agrícola. |
 
-- Optimización del Riego: Mejor gestión del riego basada en las predicciones de temperaturas, evitando el estrés hídrico o el exceso de agua.
-- Planificación de Cosecha: Programación de la cosecha en momentos óptimos, considerando las condiciones climáticas favorables para la calidad del aguacate.
-- Reducción de Pérdidas: Minimización de pérdidas debidas a eventos climáticos extremos mediante acciones preventivas informadas por el modelo.
 
+# GRACIAS
 
 
 
