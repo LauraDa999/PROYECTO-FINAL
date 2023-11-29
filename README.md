@@ -41,50 +41,50 @@ Graficar el modelo:
 # CODIGO 
 # Código para predecir temperaturas basándose en fechas:
 ```
-# Importar bibliotecas
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
-import matplotlib.pyplot as plt
+import requests
 
-# Supongamos que tenemos un conjunto de datos históricos con fechas y temperaturas
-# Estos datos deberían ser recopilados de la plantación de aguacates
-data = {'Fecha': [1, 2, 3, 4, 5, 6],
-        'Temperatura': [25, 28, 24, 30, 32, 29]}
-df = pd.DataFrame(data)
+def obtener_clima(api_key, latitud, longitud, año, mes, dia):
+    # Configura la URL de la API de OpenWeatherMap
+    url = "http://api.openweathermap.org/data/2.5/weather"
+    
+    # Parámetros de la solicitud
+    parametros = {
+        'lat': latitud,
+        'lon': longitud,
+        'appid': api_key,
+        'units': 'metric',  # Puedes cambiar a 'imperial' para unidades Fahrenheit
+    }
 
-# Dividir los datos en conjuntos de entrenamiento y prueba
-X_train, X_test, y_train, y_test = train_test_split(df[['Fecha']], df['Temperatura'], test_size=0.2, random_state=42)
+    # Realizar la solicitud a la API de OpenWeatherMap
+    respuesta = requests.get(url, params=parametros)
+    datos_clima = respuesta.json()
 
-# Crear y entrenar el modelo de regresión lineal
-modelo = LinearRegression()
-modelo.fit(X_train, y_train)
+    # Verificar si la solicitud fue exitosa (código de estado 200)
+    if respuesta.status_code == 200:
+        # Imprimir información relevante (puedes personalizar esto según tus necesidades)
+        print(f"\nClima en ({latitud}, {longitud}) para la fecha {año}-{mes}-{dia}:")
+        print(f"Descripción: {datos_clima['weather'][0]['description']}")
+        print(f"Temperatura: {datos_clima['main']['temp']}°C")
+        print(f"Humedad: {datos_clima['main']['humidity']}%")
+        print(f"Velocidad del viento: {datos_clima['wind']['speed']} m/s")
+    else:
+        print(f"\nNo se pudo obtener datos para la fecha {año}-{mes}-{dia}. Código de estado: {respuesta.status_code}")
 
-# Interacción con el usuario para ingresar fechas
-try:
-    fecha_7 = float(input("Ingrese la fecha para la predicción (por ejemplo, 7): "))
-    fecha_8 = float(input("Ingrese otra fecha para la predicción (por ejemplo, 8): "))
-except ValueError:
-    print("Error: Ingrese valores numéricos para las fechas.")
-    exit()
+# Configurar tu clave de API de OpenWeatherMap
+api_key = '8111cbcf2acc2df1f441918b49af8429'
 
-# Predecir temperaturas para las fechas ingresadas por el usuario
-nuevas_fechas = pd.DataFrame({'Fecha': [fecha_7, fecha_8]})
-predicciones = modelo.predict(nuevas_fechas)
+# Configurar las coordenadas (por ejemplo, Ciudad de México)
+latitud = 4.924203
+longitud = -75.055239
 
-# Imprimir las predicciones
-for fecha, prediccion in zip(nuevas_fechas['Fecha'], predicciones):
-    print(f"Predicción de temperatura para la fecha {fecha}: {prediccion:.2f} °C")
+# Solicitar al usuario ingresar día, mes y año
+dia = input("Ingresa el día: ")
+mes = input("Ingresa el mes: ")
+año = input("Ingresa el año: ")
 
-# Graficar el modelo y las predicciones
-plt.scatter(df['Fecha'], df['Temperatura'], color='black', label='Datos reales')
-plt.plot(df['Fecha'], modelo.predict(df[['Fecha']]), color='blue', linewidth=3, label='Modelo de regresión lineal')
-plt.scatter(nuevas_fechas['Fecha'], predicciones, color='red', label='Predicciones para nuevas fechas')
-plt.xlabel('Fecha')
-plt.ylabel('Temperatura (°C)')
-plt.title('Predicción de Temperaturas para Cultivo de Aguacates')
-plt.legend()
-plt.show()
+# Obtener y mostrar el clima para la fecha ingresada
+obtener_clima(api_key, latitud, longitud, año, mes, dia)
+
 
 
 ```
